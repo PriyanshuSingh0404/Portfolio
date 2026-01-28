@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(2, 2, 50);
+            color: white;
+        }
+        .header{
+            height: 70px;
+            background-color: rgb(1, 7, 24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 1.5em;
+        }
+
+        .header a{
+            text-decoration: none;
+            color: white;
+        }
+        .title{
+            text-align: center;
+            font-size: 2.5em;
+            margin: 40px 0;
+            color: rgb(66, 117, 194);
+        }
+
+        .projects-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 0 120px 60px;
+            box-sizing: border-box;
+        }
+
+        .project-card{
+            background-color: rgb(1, 7, 24);
+            padding: 25px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .project-card:hover{
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 0 30px rgba(66, 117, 194, 0.6);
+        }
+
+        .project-title{
+            font-size: 1.5em;
+            color: rgb(66, 117, 194);
+            margin-bottom: 15px;
+        }
+
+        .project-desc{
+            font-size: 0.95em;
+            color: rgb(216, 216, 216);
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .project-btn{
+            align-self: flex-start;
+            padding: 10px 22px;
+            background-color: rgb(66, 117, 194);
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .project-btn:hover{
+            background-color: rgb(90, 140, 220);
+            transform: scale(1.05);
+        }
+
+        @media(max-width: 1000px){
+            .projects-container{
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 60px 60px;
+            }
+        }
+
+        @media(max-width: 600px){
+            .projects-container{
+                grid-template-columns: 1fr;
+                padding: 0 30px 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contacts.html">Contacts</a>
+    </div>
+    <div class="title">My Projects</div>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <div>
+                <div class="project-title">Smart Traffic Management System</div>
+                <div class="project-desc">
+                    An AI-based traffic management system that optimizes traffic signals
+                    using priority queues, real-time data, and graph algorithms
+                    to reduce congestion.
+                </div>
+            </div>
+            <a href="https://github.com/PriyanshuSingh0404/Smart-Traffic-Management" target="_blank" class="project-btn">
+                View Project
+            </a>
+        </div>
+        <div class="project-card">
+            <div>
+                <div class="project-title">Write Flow Content Form</div>
+                <div class="project-desc">
+                   Deployed the full application on Vercel, leveraging automatic GitHub-linked deployments and serveless hosting. Improved content flow and UI structure, resulting in ~30% better page performance and increased user engagement.
+                </div>
+            </div>
+            <a href="https://github.com/PriyanshuSingh0404/Content-form-" target="_blank" class="project-btn">
+                View Project
+            </a>
+        </div>
+
+        <div class="project-card">
+            <div>
+                <div class="project-title">SwachhSetu – Waste Management System |</div>
+                <div class="project-desc">
+                  A role-based waste management web platform supporting 4 distinct user roles with
+secure authentication and dedicated dashboards. Enabled cloud-based image storage and email-driven password recovery using Cloudinary and Nodemailer.
+                </div>
+            </div>
+            <a href="https://github.com/PriyanshuSingh0404/Waste-Management-" target="_blank" class="project-btn">
+                View Project
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

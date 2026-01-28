@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #container{
+            min-height: 100vh;
+            background-color: rgb(2, 2, 50);
+        }
+        .header{
+            height: 70px;
+            background-color: rgb(1, 7, 24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 1.5em;
+            flex-wrap: wrap;
+        }
+
+        .header a{
+            text-decoration: none;
+            color: white;
+        }
+        .home{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 120px;
+            min-height: calc(100vh - 70px);
+            box-sizing: border-box;
+        }
+        .one{
+            color: white;
+            width: 550px;
+            font-size: 3em;
+        }
+
+        .one span{
+            color: rgb(66, 117, 194);
+        }
+
+        .two{
+            font-size: 0.8em;
+            margin-top: 10px;
+        }
+
+        .three{
+            font-size: 0.5em;
+            margin-top: 20px;
+            color: rgb(216, 216, 216);
+            line-height: 1.4;
+        }
+        .btn-group{
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .resume-btn,
+        .github-btn{
+            padding: 12px 26px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .resume-btn{
+            background-color: rgb(66, 117, 194);
+            color: white;
+        }
+
+        .resume-btn:hover{
+            background-color: rgb(90, 140, 220);
+            transform: scale(1.05);
+        }
+
+        .github-btn{
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgb(66, 117, 194);
+        }
+
+        .github-btn:hover{
+            background-color: rgb(66, 117, 194);
+            transform: scale(1.05);
+        }
+
+        /* RIGHT IMAGE */
+        .image-box{
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-box img{
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 6px solid rgb(66, 117, 194);
+            object-fit: cover;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .image-box img:hover{
+            transform: scale(1.12);
+            box-shadow: 0 0 40px rgba(66, 117, 194, 0.8);
+        }
+        @media (max-width: 1000px){
+            .home{
+                padding: 0 60px;
+            }
+
+            .one{
+                width: 450px;
+                font-size: 2.5em;
+            }
+
+            .image-box{
+                width: 320px;
+                height: 320px;
+            }
+
+            .image-box img{
+                width: 280px;
+                height: 280px;
+            }
+        }
+        @media (max-width: 700px){
+            .home{
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .one{
+                width: 100%;
+                font-size: 2.2em;
+            }
+
+            .btn-group{
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .image-box{
+                margin-bottom: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div id="container">
+
+    <div class="header">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contacts.html">Contacts</a>
+    </div>
+
+    <div class="home">
+        <div class="one">
+            Hello, I'm <span>Priyanshu Singh</span>
+
+            <div class="two">
+                I'm a full stack developer
+            </div>
+
+            <div class="three">
+                I have the ability to handle both user-facing front-end and
+                server-side back-end technologies, emphasizing versatility,
+                problem-solving, and building end-to-end solutions.
+            </div>
+
+            <div class="btn-group">
+                <a href="/files/resume.pdf" download class="resume-btn">
+                    Download Resume
+                </a>
+
+                <a href="https://github.com/PriyanshuSingh0404" target="_blank" class="github-btn">
+                    GitHub Profile
+                </a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="/images/bittu.jpeg" alt="Profile Image">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

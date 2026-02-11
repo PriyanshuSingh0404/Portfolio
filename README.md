@@ -1,5 +1,5 @@
 # Portfolio
-A responsive **Contact/Portfolio website** built using **HTML, CSS, and JavaScript**, designed to showcase your contact information and allow visitors to reach you easily.
+A responsive **Contact/Portfolio website** built using **HTML, CSS, and JavaScript**, designed to showcase your contact information and allow visitors to reach you .
 
 ---
 ## 🖥️ Project Demo
